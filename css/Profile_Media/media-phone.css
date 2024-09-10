@@ -1,0 +1,94 @@
+
+
+/*+++++++++ Content +++++++++++*/
+
+/*side*/
+
+.content aside .log a h2 {
+    display: none;
+}
+
+.content aside .log {
+    width: fit-content;
+}
+
+.content aside .log a img {
+    max-width: 40px;
+} 
+
+.content aside nav ul li a p{
+    display: none;
+}
+
+.content aside {
+    width: fit-content;
+    padding: 10px;
+}
+
+.content aside nav ul li a {
+    justify-content: center;
+}
+
+.content aside nav ul li a i {
+    margin-right: 0px;
+    text-align: center;
+}
+
+/*nav*/
+
+.content .navigation {
+    padding-left: calc(60px + 20px);
+}
+
+
+/*+++++++++ Profile +++++++++++*/
+
+/*logo*/
+
+.Profile {
+    margin-left: 60px;
+}
+
+.Profile .all_Pro {
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
+}
+
+/*profo*/
+
+
+.Profile .all_Pro .profo {
+    flex-direction: column;
+    grid-column: 1 / 1;
+}
+
+
+.Profile .all_Pro .profo .side2 .col4 {
+    border-color: transparent transparent var(--bord-color);
+    text-align: center;
+}
+
+.Profile .all_Pro .profo .side2 .col4:last-child {
+    border-color: transparent;
+}
+
+.Profile .all_Pro .profo .side2 .col4 p {
+    margin-bottom: 10px;
+}
+
+
+.Profile .all_Pro .profo .side2 .col4 .alm {
+    flex-direction: column;
+}
+
+/*Latest_Activities*/
+
+
+.Profile .all_Pro .Latest_Activities .fl .amlo .igg img {
+    width: 44px;
+}
+
+.Profile .all_Pro .Latest_Activities {
+    background-color: white;
+    border-radius: 10px;
+    grid-column: 1 / 1;
+}

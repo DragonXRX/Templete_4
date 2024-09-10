@@ -1,0 +1,355 @@
+/****************************************************** RESET *****************************************************************/
+:root {
+
+    /***** Colors ****/
+    --main-color: #0075ff;
+    --sem-color: #0d69d5;
+
+    --grey-color: #888;
+    --grey-mini: #f6f6f6;
+
+    --blue-color: #005aff;
+    --blue-mini: rgb(0 117 255 / 20%);
+
+    --orang-color: #f59e0b;
+    --orang-mini: rgb(245 158 11 / 20%);
+
+    --green-color: #22c55e;
+    --green-mini: rgb(34 197 94 / 20%);
+
+    --red-color: #f44336;
+    --red-mini: rgba(255, 0, 0, 0.39);
+
+    --facbook-main: #1877f2;
+    --facbook-sem: rgb(24 119 242 / 20%);
+
+    --Twittar-main: #1da1f2;
+    --Twittar-sem: rgb(29 161 242 / 20%);
+
+    --Youtube-main: #ff0000;
+    --Youtube-sem: rgb(255 0 0 / 20%);
+
+    --Linkdin-main: #0077b5;
+    --Linkdin-sem: rgb(0 119 181 / 20%);
+
+    /***** Border ****/
+    --bord-ma-color: #19c8fa78;
+    --bord-sem-back: #faf7f7;
+
+    --bord-color: #eee;
+    --bord-back: #f1f5f9;
+
+    --bord-color-w: #e9e5e5;
+    --bord-color-s: #faf7f7;
+
+    --bord-color-b: #191919;
+
+    --box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    --box-shadow-hove: 0 2px 15px rgb(0 0 0 / 20%);
+
+    /***** Transition ****/
+    --transition: 0.3s;
+
+    --transform: translate(-50%, -50%);
+
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+/****************************************************** BEGIN *****************************************************************/
+
+/*+++++++++ Content +++++++++++*/
+
+/*side*/
+
+.content aside {
+    width: 185px;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    z-index: 5445;
+}
+
+.content aside .log {
+    margin-bottom: 30px;
+}
+
+.content aside .log a {
+    color: initial;
+}
+
+.content aside .log a img {
+    max-width: 60px;
+}
+
+.content aside .log a h2 {
+    font-size: 15px;
+    position: relative;
+}.content aside .log a h2::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 34px;
+    width: 50%;
+    height: 100%;
+    background-color: #0075ffc7;
+    z-index: -1;
+    transform: skew(-55deg, -16deg);
+}
+
+.content aside nav ul {
+    text-align: start;
+}
+
+.content aside nav ul li {
+    margin-bottom: 5px;
+}
+
+.content aside nav ul li {
+    padding: 7px;
+    transition: var(--transition);
+    border-radius: 5px;
+    cursor: pointer;
+}.content aside nav ul li:hover:not(:nth-child(7)) {
+    background-color: var(--bord-back);
+}
+
+.content aside nav ul .active {
+    background-color: var(--main-color);
+}.content aside nav ul .active a {
+    color: white;
+}
+
+.content aside nav ul li a i {
+    margin-right: 5px;
+    width: 20px;
+}
+
+.content aside nav ul li a {
+    font-size: 14px;
+    color: initial;
+}
+
+/*nav*/
+
+.content .navigation {
+    height: 72px;
+    flex-basis: 100%;
+    padding: 20px;
+    padding-left: calc(185px + 20px);
+    background-color: white;
+}
+
+.content .navigation .Message {
+    align-items: center;
+}
+
+.content .navigation .Message img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.content .navigation .Message .my {
+    width: fit-content;
+    position: relative;
+}
+
+.content .navigation .Message .my {
+    font-size: 20px;
+}
+
+.content .navigation .Message .my::before {
+    content: "";
+    top: -10%;
+    right: -40%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.content .navigation form {
+    position: relative;
+}
+
+.content .navigation form i {
+    position: absolute;
+    top: 27%;
+    left: 10px;
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.content .navigation form input {
+    padding: 6px 10px 6px 30px;
+    width: 192px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.content .navigation form input::placeholder {
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.content .navigation form input:focus::placeholder {
+    opacity: 0;
+}
+
+/*+++++++++ Files +++++++++++*/
+
+/*logo*/
+
+.Files {
+    background-color: #f1f5f9;
+    padding: 20px;
+    margin-left: 185px;
+    height: 100%;
+}
+
+.Files .log h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Files .log h1 span {
+    color: white;
+    background-color: var(--main-color);
+}
+
+/*fil1*/
+
+
+.Files .all_Fi .over {
+    width: 78%;
+    height: 75vh;
+    overflow: auto;
+}
+
+.Files .all_Fi .over .fil1 {
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
+    gap: 15px;
+} 
+
+.Files .all_Fi .fil1 .chi_fil {
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.Files .all_Fi .fil1 .chi_fil .main img {
+    width: 60px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.Files .all_Fi .fil1 .chi_fil:hover .main img {
+    transform: rotate(8deg);
+}
+
+.Files .all_Fi .fil1 .chi_fil .main p {
+    font-size: 13px;
+}
+
+.Files .all_Fi .fil1 .chi_fil > p {
+    font-size: 13px;
+}
+
+.Files .all_Fi .fil1 .chi_fil .pop {
+    padding: 10px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bord-color) transparent transparent;
+}
+
+.Files .all_Fi .fil1 .chi_fil .pop p {
+    font-size: 13px;
+}
+
+.Files .all_Fi .fil2 {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 20.5%;
+}
+
+.Files .all_Fi .fil2 .table .tab {
+    border: 1px solid var(--bord-color);
+    border-radius: 5px;
+}
+
+.Files .all_Fi .fil2 .table .tab .side1 i {
+    font-size: 16px;
+    padding: 12px 0px;
+    width: 40px;
+    text-align: center;
+    color: var(--red-color);
+    background-color: var(--red-mini);
+    margin-right: 5px;
+}.Files .all_Fi .fil2 .table .tab:nth-child(2) .side1 i {
+    color: var(--green-color);
+    background-color: var(--green-mini);
+}.Files .all_Fi .fil2 .table .tab:nth-child(3) .side1 i {
+    color: var(--blue-color);
+    background-color: var(--blue-mini);
+}.Files .all_Fi .fil2 .table .tab:nth-child(4) .side1 i {
+    color: var(--orang-color);
+    background-color: var(--orang-mini);
+}
+
+.Files .all_Fi .fil2 .table .tab .side1 .tt p {
+    font-size: 13px;
+}
+
+.Files .all_Fi .fil2 .table .tab .side2 p {
+    font-size: 13px;
+}
+
+.Files .all_Fi .fil2 button {
+    font-size: 12px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    margin: auto;
+}.Files .all_Fi .fil2 button {
+    font-size: 12px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}.Files .all_Fi .fil2 button:hover i{
+    animation-name: holi;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes holi {
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+
+}
+
+

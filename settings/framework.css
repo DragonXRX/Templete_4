@@ -1,0 +1,483 @@
+/****************************************************** RESET *****************************************************************/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-siting: border-box;
+    box-sizing: border-box;
+    padding: 0px ;
+    margin: 0px ;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************************************************** SCROLL *******************************************************************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0075ff;
+    transition: var(--transition);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0075ff;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+/******************************************************* FREMWORK ***************************************************************/
+
+/*.............. FLEX + GRID .............*/
+.d-f {
+    display: flex;
+}
+.d-g {
+    display: grid;
+}
+.d-n {
+    display: none;
+}
+.d-b {
+    display: block;
+}
+
+.d-g-tb {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.a-i-s {
+    align-items: start;
+}
+.a-i-c {
+    align-items: center;
+}
+.a-i-e {
+    align-items: end;
+}
+
+.a-c-s {
+    align-content: start;
+}
+.a-c-c {
+    align-content: center;
+}
+.a-c-e {
+    align-content: end;
+}
+
+.a-c-b {
+    align-content: space-between;
+}
+.a-c-a {
+    align-content: space-around ;
+}
+.a-c-e {
+    align-content: space-evenly;
+}
+
+.j-s {
+    justify-content: start;
+}
+.j-c {
+    justify-content: center;
+}
+
+.j-s-b {
+    justify-content: space-between;
+}
+.j-s-a {
+    justify-content: space-around ;
+}
+.j-s-e {
+    justify-content: space-evenly;
+}
+
+.f-w-w {
+    flex-wrap: wrap;
+}
+
+.f-d-c {
+    flex-direction: column;
+}
+
+
+/*................ POSITION ................*/
+.p-r {
+    position: relative;
+}
+.p-a {
+    position: absolute;
+}
+
+
+/*.................. WIDTH + TEXT ..................*/
+.w-100 {
+    width: 100%;
+}
+.w-f-c {
+    width: fit-content;
+}
+
+.t-s {
+    text-align: start;
+}
+.t-c {
+    text-align: center;
+}
+.t-e {
+    text-align: end;
+}
+
+/*................. PADDING .................*/
+.p-5 {
+    padding: 5px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.p-25 {
+    padding: 25px;
+}
+.p-30 {
+    padding: 30px;
+}
+.p-35 {
+    padding: 30px;
+}
+.p-40 {
+    padding: 40px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-15 {
+    padding-left: 15;
+}
+.pl-20 {
+    padding-left: 20;
+}
+.pl-25 {
+    padding-left: 25;
+}
+.pl-30 {
+    padding-left: 30;
+}
+.pl-35 {
+    padding-left: 35;
+}
+.pl-40 {
+    padding-left: 40;
+}
+
+.pt-5 {
+    padding-top: 5px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+.pr-20 {
+    padding-right: 20px;
+}
+.pr-25 {
+    padding-right: 25px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+.pr-35 {
+    padding-right: 35px;
+}
+.pr-40 {
+    padding-right: 40px;
+}
+
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+/*................... MARGIN ...................*/
+.m-5 {
+    margin: 5px;
+}
+.m-10 {
+    margin: 10px;
+}
+.m-15 {
+    margin: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
+.m-25 {
+    margin: 25px;
+}
+.m-30 {
+    margin: 30px;
+}
+.m-35 {
+    margin: 35px;
+}
+.m-40 {
+    margin: 40px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-25 {
+    margin-left: 25px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.ml-35 {
+    margin-left: 35px;
+}
+.ml-40 {
+    margin-left: 40px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mr-25 {
+    margin-right: 25px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mr-35 {
+    margin-right: 35px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+
+/*............... FONT ..................*/
+.fs-10 {
+    font-size: 10px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+
+.f-w-b {
+    font-weight: bold;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+/*.................... BORDER ......................*/
+.br-6 {
+    border-radius: 6px;
+}
+
+.br-13 {
+    border-radius: 13px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+
+/*................... BACKROUND .....................*/
+.b-c-wh {
+    background-color: white;
+}
+.b-s-in {
+    box-shadow: 0 0 10px #ddd;
+}
+
+/*..................... COLOR ........................*/
+.c-m {
+    color: #19c8fa;
+}
+.c-b {
+    color: black;
+}
+.c-w {
+    color: white;
+}
+.c-p {
+    color: gray;
+}

@@ -1,0 +1,8 @@
+
+/*+++++++++ Courses +++++++++++*/
+
+/*logo*/
+
+.Courses .all_cou {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}

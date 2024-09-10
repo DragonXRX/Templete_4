@@ -1,0 +1,17 @@
+
+
+/*profo*/
+
+
+.Profile .all_Pro .profo {
+    flex-direction: column;
+}
+
+.Profile .all_Pro .profo .side2 .col4 {
+    border-color: transparent transparent var(--bord-color);
+    text-align: center;
+}
+
+.Profile .all_Pro .profo .side2 .col4:last-child {
+    border-color: transparent;
+}

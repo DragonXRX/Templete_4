@@ -1,0 +1,7 @@
+/*+++++++++ Plans +++++++++++*/
+
+/*logo*/
+
+.Plans .all_pl {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}

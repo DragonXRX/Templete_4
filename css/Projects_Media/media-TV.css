@@ -1,0 +1,9 @@
+
+
+/*+++++++++ Project +++++++++++*/
+
+/*logo*/
+
+.Project .all_sett {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}

@@ -1,0 +1,16 @@
+
+/*+++++++++ Dashboard +++++++++++*/
+
+/*logo*/
+
+.dashbord .all_dash {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+
+
+/*Welcome*/
+
+.dashbord .all_dash .welcome .allmm {
+    padding: 50px 0 30px 0;
+}

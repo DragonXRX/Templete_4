@@ -1,0 +1,54 @@
+
+
+/*+++++++++ Content +++++++++++*/
+
+/*side*/
+
+.content aside .log a h2 {
+    display: none;
+}
+
+.content aside .log {
+    width: fit-content;
+}
+
+.content aside .log a img {
+    max-width: 40px;
+} 
+
+.content aside nav ul li a p{
+    display: none;
+}
+
+.content aside {
+    width: fit-content;
+    padding: 10px;
+}
+
+.content aside nav ul li a {
+    justify-content: center;
+}
+
+.content aside nav ul li a i {
+    margin-right: 0px;
+    text-align: center;
+}
+
+/*nav*/
+
+.content .navigation {
+    padding-left: calc(60px + 20px);
+}
+
+
+/*+++++++++ Friends +++++++++++*/
+
+/*logo*/
+
+.Friends {
+    margin-left: 60px;
+}
+
+.Friends .all_Fri {
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
+}
